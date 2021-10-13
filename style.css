@@ -1,0 +1,62 @@
+/* Canvas */
+.canvas {
+    margin: 4rem 22rem;
+    height: 700px;
+    background-color:#d5cdc3;
+    z-index: -1000;
+}
+.border {
+    margin: 4rem 22rem;
+    height: 700px;
+    width:700px;
+    background-color:transparent;
+    border: 6rem solid white;
+    align-self:center;
+    position:absolute; top:-96px; left:-40px;
+}
+
+/* triangles */
+.triangle1 {
+    width: 0;
+    height: 0;
+    margin-top:0;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-top: 175px solid #6b6768;
+    position:absolute; left: 732px;
+  }
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-top: 400px solid transparent;
+    border-right: 400px solid #b71f0b;
+    border-bottom: 400px solid transparent;
+    position:absolute; left:700px; top:45px;
+  }
+  .triangle3 {
+    width: 0;
+    height: 0;
+    border-top: 370px solid transparent;
+    border-right: 370px solid #221c1c;
+    border-bottom: 370px solid transparent;
+    position:absolute; left:330px; top:25px;
+  }
+  .triangle4 {
+    width: 0;
+    height: 0;
+    border-top: 175px solid transparent;
+    border-left: 175px solid #d3a946;
+    border-bottom: 175px solid transparent;
+    position:absolute; left:375px; top:440px;
+  }
+  .triangle5 {
+    width: 0;
+    height: 0;
+    border-top: 260px solid transparent;
+    border-left: 260px solid #9ba0a5;
+    border-bottom: 260px solid transparent;
+    position:absolute; left:405px; top:-200px;
+  }
+  p {
+    position:absolute;
+  }

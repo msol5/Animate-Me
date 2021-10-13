@@ -1,0 +1,114 @@
+/* Canvas */
+.canvas {
+    margin: 4rem 22rem;
+    height: 700px;
+    background-color:#d5cdc3;
+    width:
+    z-index: 0;
+}
+.border {
+    margin: 4rem 22rem;
+    height: 700px;
+    width:700px;
+    background-color:transparent;
+    border: 8rem solid white;
+    align-self:center;
+    position:absolute; top:-126px; left:-74px;
+    z-index:1100;
+
+    animation-name: squeeze;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}  
+  @keyframes squeeze {
+  0% {height: 700px; width: 700px}
+  50% {height: 650px; width: 650px}
+  100% {height: 700px; width: 700px}
+  }
+
+
+/* triangles */
+.triangle1 {
+    width: 0;
+    height: 0;
+    margin-top:0;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-top: 175px solid #6b6768;
+    position:absolute; left: 732px;
+
+    animation-name:shift;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shift {
+    0% {border-top: 175px solid #6b6768; left:732px;}
+    50% {border-top:175px solid #252424; left:757px;}
+    100% {left:732px;}
+  }
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-top: 400px solid transparent;
+    border-right: 400px solid #b71f0b;
+    border-bottom: 400px solid transparent;
+    position:absolute; left:700px; top:45px;
+
+    animation-name: swing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes swing {
+    0% {left:700px;}
+    50% {left: 725px;}
+    100% {left:700px;}
+  }
+  .triangle3 {
+    width: 0;
+    height: 0;
+    border-top: 370px solid transparent;
+    border-right: 370px solid #221c1c;
+    border-bottom: 370px solid transparent;
+    position:absolute; left:330px; top:25px;
+
+    z-index: 1000;
+
+    animation-name: turn;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+  }
+
+  @keyframes turn {
+    0% {transform:rotate(0deg);}
+    50% {transform:rotate(45deg);}
+    100% {transform:rotate(0deg);}
+  }
+
+  .triangle4 {
+    width: 0;
+    height: 0;
+    border-top: 175px solid transparent;
+    border-left: 175px solid #d3a946;
+    border-bottom: 175px solid transparent;
+    position:absolute; left:375px; top:440px;
+  }
+  .triangle5 {
+    width: 0;
+    height: 0;
+    border-top: 260px solid transparent;
+    border-left: 260px solid #9ba0a5;
+    border-bottom: 260px solid transparent;
+    position:absolute; left:405px; top:-200px;
+    z-index: 1050;
+
+    animation-name: colorshift;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes colorshift {
+    0% {border-left-color: #9ba0a5;}
+    50% {border-left-color: #221c1c;}
+    100% {border-left-color: #9ba0a5;}
+  }
